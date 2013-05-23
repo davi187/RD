@@ -6,7 +6,12 @@ RedDot
 </name>
 </assembly>
 <members>
-<member name="P:RedDot.My.Resources.Resources.ResourceManager">
+<member name="F:RedDot.Driver.conn">
+	<summary>
+ Essa classe fará a abstração da comunicação aplicaçao com o banco de dados
+ </summary>
+	<remarks>Classe utilizada para executar comandos e retornar recordsets</remarks>
+</member><member name="P:RedDot.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>

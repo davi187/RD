@@ -1,4 +1,6 @@
-﻿Public Class Form1
+﻿Imports MySql.Data
+
+Public Class Form1
     Public Sub New()
 
         ' This call is required by the designer.
@@ -9,7 +11,10 @@
     End Sub
 
     Private Sub Button1_MouseClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Button1.MouseClick
-        Dim pess As New Cliente
+        Dim rs As MySqlClient.MySqlDataReader = Driver.Recordset("Select * from auditoria")
+        rs.Read()
+        MessageBox.Show(rs.Item("Acao"))
+        rs.Close()
 
     End Sub
 
