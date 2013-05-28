@@ -28,9 +28,11 @@ Public Class Driver
 
     End Sub
 
-    Public Shared Function Recordset(ByVal ComandoSql As String) As MySqlClient.MySqlDataReader
+    Public Shared Function Reader(ByVal ComandoSql As String) As System.Data.IDataReader
+
 
         Dim rs As New MySql.Data.MySqlClient.MySqlCommand(ComandoSql, Controle.Conexao.GetConexao)
+
 
         Try
 
@@ -44,5 +46,38 @@ Public Class Driver
 
     End Function
 
+    Public Shared Function Adapter(ByVal ComandoSql As String) As System.Data.IDataAdapter
 
+        Dim ad As New MySql.Data.MySqlClient.MySqlDataAdapter(ComandoSql, Controle.Conexao.GetConexao)
+
+        Try
+
+            Return ad
+
+        Catch ex As Exception
+
+            Throw ex
+
+        End Try
+
+    End Function
+    Public Shared Function DataSet(ByVal ComandoSql As String) As System.Data.DataSet
+
+        Dim ad As New MySql.Data.MySqlClient.MySqlDataAdapter(ComandoSql, Controle.Conexao.GetConexao)
+
+        Dim ds As DataSet = New DataSet
+
+        Try
+
+            ad.Fill(ds)
+
+            Return ds
+
+        Catch ex As Exception
+
+            Throw ex
+
+        End Try
+
+    End Function
 End Class

@@ -11,10 +11,8 @@ Public Class Form1
     End Sub
 
     Private Sub Button1_MouseClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Button1.MouseClick
-        Dim rs As MySqlClient.MySqlDataReader = Driver.Recordset("Select * from auditoria")
-        rs.Read()
-        MessageBox.Show(rs.Item("Acao"))
-        rs.Close()
+        Dim rs As System.Data.DataSet = Driver.DataSet("Select * from auditoria")
+        MessageBox.Show(rs.Tables(0).Rows(0).Item("acao"))
 
     End Sub
 
