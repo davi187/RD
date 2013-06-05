@@ -10,3 +10,8 @@ G:\PROJETOS\RD\SISTEMA\RedDot\RedDot\obj\x86\Debug\RedDot.exe
 G:\PROJETOS\RD\SISTEMA\RedDot\RedDot\obj\x86\Debug\RedDot.xml
 G:\PROJETOS\RD\SISTEMA\RedDot\RedDot\obj\x86\Debug\RedDot.pdb
 G:\PROJETOS\RD\SISTEMA\RedDot\RedDot\obj\x86\Debug\RedDot.Form1.resources
+G:\PROJETOS\RD\SISTEMA\RedDot\RedDot\obj\x86\Debug\RedDot.fmrCadastroMenu.resources
+G:\PROJETOS\RD\SISTEMA\RedDot\RedDot\obj\x86\Debug\RedDot.fmrPadrao.resources
+G:\PROJETOS\RD\SISTEMA\RedDot\RedDot\obj\x86\Debug\RedDot.fmrPrincipal.resources
+G:\PROJETOS\RD\SISTEMA\RedDot\RedDot\obj\x86\Debug\RedDot.LoginForm1.resources
+G:\PROJETOS\RD\SISTEMA\RedDot\RedDot\obj\x86\Debug\RedDot.SplashScreen1.resources
