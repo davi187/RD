@@ -9,15 +9,27 @@
     ' such as the username, display name, etc.
 
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
-        fmrPrincipal.Show()
+
+        If ControladorUsuario.ValidarCredenciais(Me.UsernameTextBox.Text, Me.PasswordTextBox.Text) Then
+            fmrPrincipal.Show()
+            Me.Visible = False
+        Else
+            MessageBox.Show("Usuário ou senha inválidos!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+        End If
 
     End Sub
 
     Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel.Click
-        Me.Close()
+        Application.Exit()
     End Sub
 
     Private Sub UsernameLabel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UsernameLabel.Click
+
+    End Sub
+
+    Private Sub LoginForm1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+ 
+
 
     End Sub
 End Class

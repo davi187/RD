@@ -6,6 +6,6 @@
     End Sub
 
     Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
-        Me.Dispose()
+        Application.Exit()
     End Sub
 End Class

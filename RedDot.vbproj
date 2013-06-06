@@ -74,12 +74,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controle\ControladorFuncionario.vb" />
+    <Compile Include="Controle\ControladorUsuario.vb" />
     <Compile Include="Controle\DB\Driver.vb" />
     <Compile Include="Modelo\Cliente.vb" />
     <Compile Include="Controle\DB\Conexao.vb" />
     <Compile Include="Modelo\Fornecedor.vb" />
     <Compile Include="Modelo\Funcionario.vb" />
     <Compile Include="Modelo\Pessoa.vb" />
+    <Compile Include="Modelo\Usuario.vb" />
     <Compile Include="Visao\fmrCadastroMenu.Designer.vb">
       <DependentUpon>fmrCadastroMenu.vb</DependentUpon>
     </Compile>
@@ -171,9 +173,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
