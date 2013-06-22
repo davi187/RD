@@ -19,6 +19,27 @@ RedDot
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
+</member><member name="M:RedDot.ControladorUsuario.GetUsuario(System.String)">
+	<summary>
+ Retorna o objeto usuário populado, caso o mesmo exista, caso não, o objeto vazio será retornado 
+ </summary>
+	<param name="nome"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:RedDot.ControladorUsuario.SalvarUsuario(RedDot.Usuario)">
+	<summary>
+ Salva o usuario no banco de dados
+ </summary>
+	<param name="usuario"></param>
+	<remarks></remarks>
+</member><member name="M:RedDot.ControladorUsuario.ValidarCredenciais(System.String,System.String)">
+	<summary>
+ Valida as credenciais do fornecidas e retorna se elas estao validas
+ </summary>
+	<param name="loguin"></param>
+	<param name="senha"></param>
+	<returns></returns>
+	<remarks></remarks>
 </member><member name="F:RedDot.Driver.conn">
 	<summary>
  Essa classe fará a abstração da comunicação aplicaçao com o banco de dados

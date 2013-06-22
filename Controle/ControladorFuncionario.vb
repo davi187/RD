@@ -9,14 +9,23 @@
             Dim func As New Funcionario
 
             func.Bairro = linha.Item("bairro")
-            func.Fantasia = linha.Item("bairro")
-            func.Bairro = linha.Item("bairro")
-            func.Bairro = linha.Item("bairro")
-            func.Bairro = linha.Item("bairro")
-            func.Bairro = linha.Item("bairro")
-            func.Bairro = linha.Item("bairro")
-            func.Bairro = linha.Item("bairro")
-
+            func.CCidade = linha.Item("bairro")
+            func.CEP = linha.Item("bairro")
+            func.CPFCNPJ = linha.Item("bairro")
+            func.CUF = linha.Item("bairro")
+            func.CVendedor = linha.Item("bairro")
+            func.DataAlterado = linha.Item("bairro")
+            func.DataCadastro = linha.Item("bairro")
+            'func.DataCriado
+            'func.DataDesativado
+            'func.Email
+            'func.Endereco
+            'func.Fantasia
+            'func.IERG
+            'func.PontoReferencia
+            'func.TipoCadastro
+            'func.TipoCadastro
+            'func.
 
         Next
 

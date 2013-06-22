@@ -15,14 +15,34 @@
             Throw ex
         End Try
     End Function
+    ''' <summary>
+    ''' Retorna o objeto usuário populado, caso o mesmo exista, caso não, o objeto vazio será retornado 
+    ''' </summary>
+    ''' <param name="nome"></param>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
     Public Shared Function GetUsuario(ByVal nome As String) As Usuario
-        'Retorna o objeto usuario com as informações do usuarui pesquisado, caso esse exista
         If GetUsuarios.Where(Function(f) f.Nome = nome).Count = 0 Then
             Return Nothing
         Else
             Return GetUsuarios.Where(Function(f) f.Nome = nome).First
         End If
     End Function
+    ''' <summary>
+    ''' Salva o usuario no banco de dados
+    ''' </summary>
+    ''' <param name="usuario"></param>
+    ''' <remarks></remarks>
+    Public Shared Sub SalvarUsuario(ByVal usuario As Usuario)
+        Driver.Execute(String.Format("INSERT INTO USUARIO (NOME,SENHA) VALUES('{0}','{1}')", usuario.Nome, usuario.Senha))
+    End Sub
+    ''' <summary>
+    ''' Valida as credenciais do fornecidas e retorna se elas estao validas
+    ''' </summary>
+    ''' <param name="loguin"></param>
+    ''' <param name="senha"></param>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
     Public Shared Function ValidarCredenciais(ByVal loguin As String, ByVal senha As String) As Boolean
 
         Dim musuario As Usuario = ControladorUsuario.GetUsuario(loguin)
@@ -35,6 +55,4 @@
         End If
         Return False
     End Function
-
-
 End Class
