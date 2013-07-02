@@ -53,7 +53,7 @@ Partial Class fmrPrincipal
         Me.Button2.ForeColor = System.Drawing.Color.DarkRed
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(33, 52)
+        Me.Button2.Location = New System.Drawing.Point(178, 54)
         Me.Button2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(112, 39)

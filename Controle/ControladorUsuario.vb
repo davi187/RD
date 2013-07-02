@@ -2,15 +2,17 @@
     Public Shared Function GetUsuarios() As List(Of Usuario)
         Try
 
-            Dim ds As DataSet = Driver.DataSet("SELECT * FROM usuario WHERE excluido=0")
+            Dim dr As MySql.Data.MySqlClient.MySqlDataReader = Driver.Reader("SELECT * FROM usuario WHERE excluido=0")
             Dim listaUsuarios As List(Of Usuario) = New List(Of Usuario)
 
-            For Each linha In ds.Tables(0).Rows
-                listaUsuarios.Add(New Usuario(linha("id"), linha("Nome"), linha("senha")))
-            Next
+            If dr.HasRows Then
+                While dr.Read()
+                    listaUsuarios.Add(New Usuario(dr.Item("id"), dr.Item("Nome"), dr.Item("senha")))
+                End While
+            End If
 
+            dr.Close()
             Return listaUsuarios
-
         Catch ex As Exception
             Throw ex
         End Try

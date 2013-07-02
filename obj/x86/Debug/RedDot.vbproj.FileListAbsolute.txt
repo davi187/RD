@@ -15,3 +15,7 @@ G:\PROJETOS\RD\SISTEMA\RedDot\RedDot\obj\x86\Debug\RedDot.fmrPadrao.resources
 G:\PROJETOS\RD\SISTEMA\RedDot\RedDot\obj\x86\Debug\RedDot.fmrPrincipal.resources
 G:\PROJETOS\RD\SISTEMA\RedDot\RedDot\obj\x86\Debug\RedDot.LoginForm1.resources
 G:\PROJETOS\RD\SISTEMA\RedDot\RedDot\obj\x86\Debug\RedDot.SplashScreen1.resources
+E:\Projeto\RedDot\RedDot\bin\Debug\RedDot.exe.config
+E:\Projeto\RedDot\RedDot\obj\x86\Debug\RedDot.exe
+E:\Projeto\RedDot\RedDot\obj\x86\Debug\RedDot.xml
+E:\Projeto\RedDot\RedDot\obj\x86\Debug\RedDot.pdb
