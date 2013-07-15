@@ -19,3 +19,13 @@ E:\Projeto\RedDot\RedDot\bin\Debug\RedDot.exe.config
 E:\Projeto\RedDot\RedDot\obj\x86\Debug\RedDot.exe
 E:\Projeto\RedDot\RedDot\obj\x86\Debug\RedDot.xml
 E:\Projeto\RedDot\RedDot\obj\x86\Debug\RedDot.pdb
+E:\Projeto\RedDot\RedDot\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Projeto\RedDot\RedDot\obj\x86\Debug\RedDot.Resources.resources
+E:\Projeto\RedDot\RedDot\obj\x86\Debug\RedDot.fmrCadastroMenu.resources
+E:\Projeto\RedDot\RedDot\obj\x86\Debug\RedDot.fmrPadrao.resources
+E:\Projeto\RedDot\RedDot\obj\x86\Debug\RedDot.fmrPrincipal.resources
+E:\Projeto\RedDot\RedDot\obj\x86\Debug\RedDot.fmrCadastroCliente.resources
+E:\Projeto\RedDot\RedDot\obj\x86\Debug\RedDot.LoginForm1.resources
+E:\Projeto\RedDot\RedDot\obj\x86\Debug\RedDot.SplashScreen1.resources
+E:\Projeto\RedDot\RedDot\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Projeto\RedDot\RedDot\obj\x86\Debug\GenerateResource.write.1.tlog
