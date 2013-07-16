@@ -74,7 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controle\ControladorFuncionario.vb" />
-    <Compile Include="Controle\ControladorPessoa.vb" />
+    <Compile Include="Controle\ControladorFornecedor.vb" />
     <Compile Include="Controle\ControladorUsuario.vb" />
     <Compile Include="Controle\DB\Driver.vb" />
     <Compile Include="Modelo\Cliente.vb" />
@@ -83,6 +83,7 @@
     <Compile Include="Modelo\Funcionario.vb" />
     <Compile Include="Modelo\Pessoa.vb" />
     <Compile Include="Modelo\Usuario.vb" />
+    <Compile Include="Util\SqlFactory.vb" />
     <Compile Include="Visao\fmrCadastroMenu.Designer.vb">
       <DependentUpon>fmrCadastroMenu.vb</DependentUpon>
     </Compile>

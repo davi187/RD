@@ -45,6 +45,19 @@ RedDot
  Essa classe fará a abstração da comunicação aplicaçao com o banco de dados
  </summary>
 	<remarks>Classe utilizada para executar comandos e retornar recordsets</remarks>
+</member><member name="M:RedDot.ControladorFuncionario.getFuncionarios">
+	<summary>
+ Retorna a lista dos funcionarios cadastrados
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:RedDot.ControladorFuncionario.GetFuncionario(System.Int32)">
+	<summary>
+ Retorna o funcionario buscando pelo codigo
+ </summary>
+	<param name="id"></param>
+	<returns></returns>
+	<remarks></remarks>
 </member>
 </members>
 </doc>

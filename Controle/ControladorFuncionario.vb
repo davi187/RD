@@ -1,42 +1,96 @@
 ﻿Public Class ControladorFuncionario
+    ''' <summary>
+    ''' Retorna a lista dos funcionarios cadastrados
+    ''' </summary>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
     Public Shared Function getFuncionarios() As List(Of Funcionario)
 
         Dim listaFuncionarios As New List(Of Funcionario)
 
-        Dim rs As DataSet = Driver.Reader("Select * FROM Pessoas WHERE TipoCadastro=2 AND dataDesativado=''")
+        Dim dr As MySql.Data.MySqlClient.MySqlDataReader = Driver.Reader("Select * FROM Pessoas WHERE TipoCadastro=2 AND dataDesativado=''")
 
+        If Not dr.HasRows Then Return Nothing
 
+        While dr.Read()
 
-        For Each linha As DataRow In rs.Tables(0).Rows
             Dim func As New Funcionario
-
-            func.Fantasia = linha.Item("Fantasia")
-            func.RazaoSocial = linha.Item("RazaoSocial")
-            func.CPFCNPJ = linha.Item("CPFCNPJ")
-            func.IERG = linha.Item("IERG")
-            func.Endereco = linha.Item("Endereco")
-            func.Numero = linha.Item("Numero")
-            func.Bairro = linha.Item("bairro")
-            func.CCidade = linha.Item("cCidade")
-            func.CUF = linha.Item("cUF")
-            func.CEP = linha.Item("CEP")
-            func.DataCadastro = linha.Item("DataCadastro")
-            func.Responsavel = linha.Item("Responsavel")
-            func.PontoReferencia = linha.Item("PontoReferencia")
-            func.CVendedor = linha.Item("cVendedor")
-            func.Email = linha.Item("Email")
-            func.UsuarioCriado = linha.Item("UsuarioCriado")
-            func.DataCriado = linha.Item("DataCriado")
-            func.UsuarioDesativado = linha.Item("UsuarioDesativado")
-            func.DataDesativado = linha.Item("DataDesativado")
-            func.UsuarioAlterado = linha.Item("UsuarioAlterado")
-            func.DataAlterado = linha.Item("DataAlterado")
+            func.Fantasia = dr.Item("Fantasia")
+            func.RazaoSocial = dr.Item("RazaoSocial")
+            func.CPFCNPJ = dr.Item("CPFCNPJ")
+            func.IERG = dr.Item("IERG")
+            func.Endereco = dr.Item("Endereco")
+            func.Numero = dr.Item("Numero")
+            func.Bairro = dr.Item("bairro")
+            func.CCidade = dr.Item("cCidade")
+            func.CUF = dr.Item("cUF")
+            func.CEP = dr.Item("CEP")
+            func.DataCadastro = dr.Item("DataCadastro")
+            func.Responsavel = dr.Item("Responsavel")
+            func.PontoReferencia = dr.Item("PontoReferencia")
+            func.CVendedor = dr.Item("cVendedor")
+            func.Email = dr.Item("Email")
+            func.UsuarioCriado = dr.Item("UsuarioCriado")
+            func.DataCriado = dr.Item("DataCriado")
+            func.UsuarioDesativado = dr.Item("UsuarioDesativado")
+            func.DataDesativado = dr.Item("DataDesativado")
+            func.UsuarioAlterado = dr.Item("UsuarioAlterado")
+            func.DataAlterado = dr.Item("DataAlterado")
             'Adicionando Funcionario a lista
             listaFuncionarios.Add(func)
+        End While
 
-        Next
-
+        Return listaFuncionarios
 
     End Function
+    ''' <summary>
+    ''' Retorna o funcionario buscando pelo codigo
+    ''' </summary>
+    ''' <param name="id"></param>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
+    Public Function GetFuncionario(ByVal id As Integer) As Funcionario
+
+        Dim sql As String = String.Format("Select * FROM Pessoas WHERE TipoCadastro=2 AND dataDesativado='' AND  id={0}", id)
+
+        Dim dr As MySql.Data.MySqlClient.MySqlDataReader = Driver.Reader(sql)
+
+        If Not dr.HasRows Then Return Nothing
+
+        Dim func As New Funcionario
+
+        While dr.Read()
+
+            func.Fantasia = dr.Item("Fantasia")
+            func.RazaoSocial = dr.Item("RazaoSocial")
+            func.CPFCNPJ = dr.Item("CPFCNPJ")
+            func.IERG = dr.Item("IERG")
+            func.Endereco = dr.Item("Endereco")
+            func.Numero = dr.Item("Numero")
+            func.Bairro = dr.Item("bairro")
+            func.CCidade = dr.Item("cCidade")
+            func.CUF = dr.Item("cUF")
+            func.CEP = dr.Item("CEP")
+            func.DataCadastro = dr.Item("DataCadastro")
+            func.Responsavel = dr.Item("Responsavel")
+            func.PontoReferencia = dr.Item("PontoReferencia")
+            func.CVendedor = dr.Item("cVendedor")
+            func.Email = dr.Item("Email")
+            func.UsuarioCriado = dr.Item("UsuarioCriado")
+            func.DataCriado = dr.Item("DataCriado")
+            func.UsuarioDesativado = dr.Item("UsuarioDesativado")
+            func.DataDesativado = dr.Item("DataDesativado")
+            func.UsuarioAlterado = dr.Item("UsuarioAlterado")
+            func.DataAlterado = dr.Item("DataAlterado")
+
+
+
+
+        End While
+
+        Return func
+
+    End Function
+
 
 End Class
