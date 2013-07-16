@@ -1,14 +1,22 @@
-﻿Public Class ControladorFuncionario
-    Public Shared Function getFuncionarios() As List(Of Funcionario)
+﻿Public Class ControladorPessoa
+    Private Shared mtipoCadastro As Modelo.Pessoa.TipoPessoa
+    Public Overridable ReadOnly Property TipoCadastro() As Modelo.Pessoa.TipoPessoa
+        Get
+            mtipoCadastro = Nothing
+            Return mtipoCadastro
+        End Get
+    End Property
+
+    Public Shared Function getPess() As List(Of Funcionario)
 
         Dim listaFuncionarios As New List(Of Funcionario)
 
-        Dim rs As DataSet = Driver.Reader("Select * FROM Pessoas WHERE TipoCadastro=2 AND dataDesativado=''")
+        Dim rs As DataSet = Driver.Reader(String.Format("Select * FROM Pessoas WHERE TipoCadastro={0} AND dataDesativado=''", mtipoCadastro))
 
 
 
         For Each linha As DataRow In rs.Tables(0).Rows
-            Dim func As New Funcionario
+            Dim func As New ControladorPessoa
 
             func.Fantasia = linha.Item("Fantasia")
             func.RazaoSocial = linha.Item("RazaoSocial")
@@ -38,5 +46,4 @@
 
 
     End Function
-
 End Class

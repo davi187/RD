@@ -74,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controle\ControladorFuncionario.vb" />
+    <Compile Include="Controle\ControladorPessoa.vb" />
     <Compile Include="Controle\ControladorUsuario.vb" />
     <Compile Include="Controle\DB\Driver.vb" />
     <Compile Include="Modelo\Cliente.vb" />
