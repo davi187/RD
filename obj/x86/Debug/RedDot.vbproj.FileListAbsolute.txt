@@ -29,3 +29,6 @@ E:\Projeto\RedDot\RedDot\obj\x86\Debug\RedDot.LoginForm1.resources
 E:\Projeto\RedDot\RedDot\obj\x86\Debug\RedDot.SplashScreen1.resources
 E:\Projeto\RedDot\RedDot\obj\x86\Debug\GenerateResource.read.1.tlog
 E:\Projeto\RedDot\RedDot\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Projeto\RedDot\RedDot\bin\Debug\RedDot.exe
+E:\Projeto\RedDot\RedDot\bin\Debug\RedDot.pdb
+E:\Projeto\RedDot\RedDot\bin\Debug\RedDot.xml
