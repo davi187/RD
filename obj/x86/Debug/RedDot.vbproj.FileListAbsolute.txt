@@ -28,8 +28,14 @@ E:\Projeto\RedDot\RedDot\obj\x86\Debug\RedDot.LoginForm1.resources
 E:\Projeto\RedDot\RedDot\obj\x86\Debug\RedDot.SplashScreen1.resources
 E:\Projeto\RedDot\RedDot\obj\x86\Debug\GenerateResource.read.1.tlog
 E:\Projeto\RedDot\RedDot\obj\x86\Debug\GenerateResource.write.1.tlog
+<<<<<<< HEAD
 G:\PROJETOS\RD\SISTEMA\RedDot\RedDot\obj\x86\Debug\RedDot.fmrCadastroCliente.resources
 D:\PROJETOS\RD\SISTEMA\RedDot\RedDot\bin\Debug\RedDot.exe.config
 D:\PROJETOS\RD\SISTEMA\RedDot\RedDot\obj\x86\Debug\RedDot.exe
 D:\PROJETOS\RD\SISTEMA\RedDot\RedDot\obj\x86\Debug\RedDot.xml
 D:\PROJETOS\RD\SISTEMA\RedDot\RedDot\obj\x86\Debug\RedDot.pdb
+=======
+E:\Projeto\RedDot\RedDot\bin\Debug\RedDot.exe
+E:\Projeto\RedDot\RedDot\bin\Debug\RedDot.pdb
+E:\Projeto\RedDot\RedDot\bin\Debug\RedDot.xml
+>>>>>>> fc01e5f7b0e4a7e8193dada6e80959d6a07c9f5e
